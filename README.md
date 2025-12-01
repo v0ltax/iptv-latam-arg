@@ -2,7 +2,7 @@
 
 🌟 **¡Dale una estrellita para bancar este proyecto!** 🌟
 
-Este repositorio recopila y comparte algunas listas de reproducción m3u de IPTV, aptas para todo tipo de reproductores, para que sea fácil importar, probar y usar directo en la tele, TV Box o software.  
+Este repositorio recopila y comparte algunas listas de reproducción m3u de IPTV, aptas para todo tipo de reproductores, para que sea fácil importar, probar y usar directo.  
 
 ---
 
@@ -30,7 +30,6 @@ Podés copiar y pegar los siguientes enlaces **directamente en tu reproductor**,
      https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-World.m3u
 ---
 
-
 ## 💡 Aclaraciones y Aviso
 
 - Todas las listas de reproducción m3u de este repositorio son **solo para aprendizaje personal, intercambio y pruebas**. Por favor, no las usen con fines comerciales.
@@ -49,12 +48,18 @@ Podés copiar y pegar los siguientes enlaces **directamente en tu reproductor**,
 
 ---
 
-🚬 **Descargo de responsabilidad**
-Este repo es solo para fines educativos.  
-Los desarrolladores no alojan ni distribuyen ningún contenido multimedia.  
-No lo utilices para ningún fin ilegal o comercial.  
-Si algún propietario de contenido lo solicita, el proyecto será eliminado.  
+## 🚬 Descargo de responsabilidad
+
+Este repo fue creado **solo para fines educativos**.
+
+Los desarrolladores no alojan ni distribuyen ningún contenido multimedia.
+
+No lo utilices para ningún fin ilegal o comercial.
+
+Si algún propietario de contenido lo solicita, el proyecto será eliminado.
+
 Respetá los derechos de autor.
+
 
 > © 2025 v0ltax 
 > Este proyecto no tiene relación con ninguna estación de TV ni compañía de medios; todos los recursos son recopilados y organizados desde internet.
