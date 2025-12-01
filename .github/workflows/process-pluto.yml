@@ -1,0 +1,68 @@
+name: 2. Process Pluto World
+
+on:
+  schedule:
+    - cron: '30 3 * * *' # Corre a y media (ej: 14:30, 15:30)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  process-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repo
+        uses: actions/checkout@v4
+
+      - name: Mover y Tunear Pluto World
+        run: |
+          # Chequeamos si el archivo existe (del workflow anterior)
+          if [ -f "sync-m3u/PlutoTV-All.m3u" ]; then
+            echo "Archivo encontrado. Procesando..."
+            
+            # 1. Moverlo a la raíz con nombre nuevo
+            # Usamos cp en vez de mv para dejar una copia en sync por las dudas, 
+            # o mv si querés sacarlo de ahí. Voy con cp para no romper la carpeta sync.
+            cp "sync-m3u/PlutoTV-All.m3u" ./PlutoTV-World.m3u
+            
+            # 2. Fecha actual
+            FECHA=$(date +"%Y-%m-%d %H:%M:%S")
+
+            # 3. Armar el Header
+            cat <<EOF > header_temp.txt
+          #=================================
+          # 🖥 Developed by: v0ltax
+          # 🎯 This repository does NOT host any content.
+          # 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
+          # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
+          # 🕒 Last Updated: $FECHA
+          #==================================
+          #EXTM3U url-tvg="https://raw.github.com/matthuisman/i.mjh.nz/master/PlutoTV/all.xml.gz"
+          #==================================
+          EOF
+
+            # 4. Pegar Header + Contenido (borrando la 1ra línea del original)
+            cat header_temp.txt > PlutoTV-World.temp
+            tail -n +11 PlutoTV-World.m3u >> PlutoTV-World.temp
+            
+            # 5. Reemplazar archivo final y limpiar
+            mv PlutoTV-World.temp PlutoTV-World.m3u
+            rm header_temp.txt
+            
+          else
+            echo "⚠️ No se encontró sync-m3u/PlutoTV-All.m3u. Quizás falló la descarga anterior."
+            exit 0
+          fi
+
+      - name: Commit y Push
+        run: |
+          git config --global user.name 'GitHub Action Bot'
+          git config --global user.email 'action@github.com'
+          
+          # Agregamos el archivo de la raíz
+          git add PlutoTV-World.m3u
+          
+          # Commit si cambió algo (ej: la fecha o canales nuevos)
+          git diff --cached --quiet || (git commit -m "Update: Pluto World m3u + epg" && git push)
