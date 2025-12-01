@@ -13,15 +13,23 @@ Este repositorio recopila y comparte algunas listas de reproducción m3u de IPTV
 2. **Importar al reproductor IPTV** - Reproductor recomendado:
      - [😈 Muy recomendado: Charming Player (Versión PC)](https://github.com/CharmingCheung/CharmingTVBox/releases)
 
-## 📝 Algunas listas a la mano
+## 🚀 Algunas listas a mano
 
 Podés copiar y pegar los siguientes enlaces **directamente en tu reproductor**, todos tienen los EPG integrados:
 
-- PlutoTV-AR: [`https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-AR.m3u8`](https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-AR.m3u8)
-- PlutoTV-US: [`https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-US.m3u8`](https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-US.m3u8)
-- PlutoTV-ALL: [`hhttps://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-World.m3u`](https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-World.m3u)
-
+- PlutoTV-AR: 
+   ```text
+     https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-AR.m3u8
 ---
+- PlutoTV-US:
+   ```text
+     https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-US.m3u8
+---
+- PlutoTV-ALL:
+   ```text
+     https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-World.m3u
+---
+
 
 ## 💡 Aclaraciones y Aviso
 

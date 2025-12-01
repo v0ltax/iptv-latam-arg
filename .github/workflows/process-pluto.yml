@@ -2,7 +2,7 @@ name: 2. Process Pluto World
 
 on:
   schedule:
-    - cron: '30 3 * * *' # Corre a y media (ej: 14:30, 15:30)
+    - cron: '30 3 * * *' # 'minuto hora * * *' -> Todos los días a las 03:30 AM UTC
   workflow_dispatch:
 
 permissions:
