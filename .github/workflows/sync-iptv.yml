@@ -1,88 +1,48 @@
-name: Sync M3U
+name: 1. Sync M3U Files
 
 on:
   schedule:
-    - cron: '0 * * * *' # Corre cada hora
+    - cron: '0 * * * *' # Corre a la hora en punto (ej: 14:00, 15:00)
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  sync:
+  download-files:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout del repo
         uses: actions/checkout@v4
 
-      - name: Preparar carpetas y bajar archivos
+      - name: Bajar archivos a sync-m3u
         run: |
-          # 1. Creamos la carpeta de destino (si no existe)
+          # 1. Creamos la carpeta limpia
           mkdir -p sync-m3u
           
-          # 2. Buscamos las URLs en el repo de origen
+          # 2. Buscamos las URLs
+          echo "Buscando archivos m3u/m3u8..."
           curl -s https://api.github.com/repos/abusaeeidx/IPTV-Scraper-Zilla/contents \
           | jq -r '.[] | select(.name | test("\\.(m3u8?)$")) | .download_url' > urls.txt
           
-          echo "URLs encontradas:"
-          cat urls.txt
-
-          # 3. Bajamos los archivos DENTRO de la carpeta sync-m3u
+          # 3. Bajamos todo adentro de la carpeta
           while read -r url; do
             [ -z "$url" ] && continue
             filename=$(basename "$url")
-            echo "Bajando $filename..."
-            curl -L -o "sync-m3u/$filename" "$url"
+            # echo "Bajando $filename..."
+            curl -L -s -o "sync-m3u/$filename" "$url"
           done < urls.txt
-
-      - name: Procesar Pluto World
-        run: |
-          # Chequeamos si se bajó el archivo que nos interesa
-          if [ -f "sync-m3u/PlutoTV-All.m3u" ]; then
-            echo "Encontrado PlutoTV-All.m3u, procesando..."
-            
-            # 1. Lo movemos a la raíz con el nombre nuevo
-            mv "sync-m3u/PlutoTV-All.m3u" ./PlutoTV-World.m3u
-            
-            # 2. Capturamos la fecha y hora actual
-          FECHA=$(date +"%Y-%m-%d %H:%M:%S")
-
-          # 3. Creamos un archivo temporal solo con TU encabezado
-          # Usamos $FECHA para que se actualice sola
-          cat <<EOF > header_temp.txt
-          #=================================
-          # 🖥 Developed by: v0ltax
-          # 🎯 This repository does NOT host any content.
-          # 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
-          # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
-          # 🕒 Last Updated: $FECHA
-          #==================================
-          #EXTM3U url-tvg="https://raw.github.com/matthuisman/i.mjh.nz/master/PlutoTV/all.xml.gz"
-          #==================================
-          EOF
-            
-            # Unimos: Header + Contenido del archivo (quitándole la 1ra línea original para no duplicar #EXTM3U)
-            # Si el original NO tiene #EXTM3U, sacale el "tail -n +2" y dejá solo "cat PlutoTV-World.m3u"
-            cat header_temp.txt > PlutoTV-World.temp
-            tail -n +2 PlutoTV-World.m3u >> PlutoTV-World.temp
-            
-            # Reemplazamos el archivo final
-            mv PlutoTV-World.temp PlutoTV-World.m3u
-            rm header_temp.txt
-            
-          else
-            echo "Ojo: No se encontró PlutoTV-All.m3u en la descarga."
-          fi
+          
+          rm urls.txt
 
       - name: Commit y Push
         run: |
           git config --global user.name 'GitHub Action Bot'
           git config --global user.email 'action@github.com'
-
-          # Agregamos la carpeta sync y el archivo de la raíz
+          
+          # Agregamos solo la carpeta de descarga
           git add sync-m3u/
-          git add PlutoTV-World.m3u
-
-          # Commiteamos si hay cambios
-          git diff --cached --quiet || (git commit -m "Sync: Archivos m3u" && git push)
+          
+          # Commit solo si hay cambios
+          git diff --cached --quiet || (git commit -m "Sync: Descarga de listas m3u" && git push)
