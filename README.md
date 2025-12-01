@@ -17,9 +17,9 @@ Este repositorio recopila y comparte algunas listas de reproducción m3u de IPTV
 
 Podés copiar y pegar los siguientes enlaces **directamente en tu reproductor**, todos tienen los EPG integrados:
 
-- PlutoTV-AR: [`https://raw.githubusercontent.com/v0ltax/iptv-latam/refs/heads/main/PlutoTV-AR/PlutoTV-AR.m3u8`](https://raw.githubusercontent.com/v0ltax/iptv-latam/refs/heads/main/PlutoTV-AR/PlutoTV-AR.m3u8)
-- PlutoTV-US: [`https://raw.githubusercontent.com/v0ltax/iptv-latam/refs/heads/main/pluto-autoupdate/pluto-us.m3u8`](https://raw.githubusercontent.com/v0ltax/iptv-latam/refs/heads/main/pluto-autoupdate/pluto-us.m3u8)
-- PlutoTV-ALL: [`hhttps://raw.githubusercontent.com/v0ltax/iptv-latam/refs/heads/main/PlutoTV-AR/PlutoTV-World.m3u`](https://raw.githubusercontent.com/v0ltax/iptv-latam/refs/heads/main/PlutoTV-AR/PlutoTV-World.m3u)
+- PlutoTV-AR: [`https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-AR.m3u8`](https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-AR.m3u8)
+- PlutoTV-US: [`https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-US.m3u8`](https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-US.m3u8)
+- PlutoTV-ALL: [`hhttps://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-World.m3u`](https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-World.m3u)
 
 ---
 
@@ -31,9 +31,9 @@ Podés copiar y pegar los siguientes enlaces **directamente en tu reproductor**,
 
 ---
 
-## 🙌 Basado en los proyectos originales
+## 🙌 Basado en los proyectos
 
-- [https://github.com/judy-gotv/iptv](https://github.com/judy-gotv/iptv)
+- [https://github.com/abusaeeidx/IPTV-Scraper-Zilla](https://github.com/abusaeeidx/IPTV-Scraper-Zilla)
 - [https://github.com/evoactivity/PlutoIPTV](https://github.com/evoactivity/PlutoIPTV)
 - [https://github.com/matthuisman/i.mjh.nz](https://github.com/matthuisman/i.mjh.nz)
 
@@ -41,7 +41,7 @@ Cualquier consulta, contactame a través de un Pull Request o un Issue.
 
 ---
 
-📝 **Descargo de responsabilidad** Este script es solo para fines educativos.  
+📝 **Descargo de responsabilidad** Este repo es solo para fines educativos.  
 Los desarrolladores no alojan ni distribuyen ningún contenido multimedia.  
 No lo utilices para ningún fin ilegal o comercial.  
 Si algún propietario de contenido lo solicita, el proyecto será eliminado.  
