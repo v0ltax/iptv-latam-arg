@@ -1,0 +1,64 @@
+name: Actualizar Pluto TV (US)
+
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generar-listas:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repo
+        uses: actions/checkout@v4
+
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generar y Personalizar
+        run: |
+          echo "Generando lista de USA..."
+          npx pluto-iptv
+
+          # 1. Capturamos la fecha y hora actual
+          FECHA=$(date +"%Y-%m-%d %H:%M:%S")
+
+          # 2. Creamos un archivo temporal solo con TU encabezado
+          # Usamos $FECHA para que se actualice sola
+          cat <<EOF > header_temp.txt
+          #=================================
+          # 🖥 Developed by: v0ltax
+          # 🎯 This repository does NOT host any content.
+          # 🔗 M3U8: https://github.com/evoactivity/PlutoIPTV
+          # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
+          # 🕒 Last Updated: $FECHA
+          #==================================
+          #EXTM3U url-tvg="https://raw.github.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml.gz"
+          #==================================
+          EOF
+
+          # 3. Unimos todo
+          cat header_temp.txt > pluto-final.m3u8
+          tail -n +2 playlist.m3u8 >> pluto-final.m3u8
+
+          # 4. Movemos a la carpeta final
+          mv pluto-final.m3u8 PlutoTV-US.m3u8
+          
+          # Borramos el temporal para no dejar basura
+          rm header_temp.txt playlist.m3u8
+
+      - name: Commit y Push
+        run: |
+          git config --global user.name 'GitHub Action Bot'
+          git config --global user.email 'action@github.com'
+          
+          git add pluto-autoupdate/
+          
+          git commit -m "Update: Pluto US m3u + epg" || echo "Sin cambios"
+          git push
