@@ -1,4 +1,4 @@
-# Colección de Listas de Reproducción IPTV
+# Listas M3U8 de IPTV
 
 🌟 **¡Dale una estrellita para bancar este proyecto!** 🌟
 
@@ -39,17 +39,18 @@ Podés copiar y pegar los siguientes enlaces **directamente en tu reproductor**,
 
 ---
 
-## 🙌 Basado en los proyectos
+## 🙌 Basado en los siguientes proyectos
 
 - [https://github.com/abusaeeidx/IPTV-Scraper-Zilla](https://github.com/abusaeeidx/IPTV-Scraper-Zilla)
 - [https://github.com/evoactivity/PlutoIPTV](https://github.com/evoactivity/PlutoIPTV)
 - [https://github.com/matthuisman/i.mjh.nz](https://github.com/matthuisman/i.mjh.nz)
 
-Cualquier consulta, contactame a través de un Pull Request o un Issue.
+📝 Cualquier consulta, contactame a través de un Pull Request o un Issue.
 
 ---
 
-📝 **Descargo de responsabilidad** Este repo es solo para fines educativos.  
+🚬 **Descargo de responsabilidad**
+Este repo es solo para fines educativos.  
 Los desarrolladores no alojan ni distribuyen ningún contenido multimedia.  
 No lo utilices para ningún fin ilegal o comercial.  
 Si algún propietario de contenido lo solicita, el proyecto será eliminado.  
