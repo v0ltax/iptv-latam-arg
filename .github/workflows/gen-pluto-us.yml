@@ -1,4 +1,4 @@
-name: Actualizar Pluto TV (US)
+name: 3. Generate Pluto TV (US)
 
 on:
   schedule:
@@ -58,7 +58,7 @@ jobs:
           git config --global user.name 'GitHub Action Bot'
           git config --global user.email 'action@github.com'
           
-          git add pluto-autoupdate/
+          git add PlutoTV-US.m3u8
           
           git commit -m "Update: Pluto US m3u + epg" || echo "Sin cambios"
           git push
