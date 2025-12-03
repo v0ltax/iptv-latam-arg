@@ -3,11 +3,10 @@
 # 🎯 This repository does NOT host any content.
 # 🔗 M3U8: https://github.com/evoactivity/PlutoIPTV
 # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
-# 🕒 Last Updated: 2025-12-01
+# 🕒 Last Updated: 2025-12-02
 #==================================
-#EXTM3U url-tvg="https://raw.github.com/matthuisman/i.mjh.nz/master/PlutoTV/AR.xml.gz"
+#EXTM3U url-tvg="https://raw.github.com/matthuisman/i.mjh.nz/master/PlutoTV/ar.xml.gz"
 #==================================
-#EXTM3U
 #EXTINF:0 tvg-id="pluto-tv-cine-accion" tvg-logo="http://images.pluto.tv/channels/5dcb62e63d4d8f0009f36881/colorLogoPNG_1760378798093.png" group-title="Películas", Pluto TV Cine Acción
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5dcb62e63d4d8f0009f36881/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=b20820f0-cfdb-11f0-8ab8-a11637a3a38e&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=851b771d-616a-49be-8183-4918c2e2d78c&userId=&serverSideAds=true
 
