@@ -1,6 +1,6 @@
-# Listas M3U8 de IPTV
+# Listas M3U8 de IPTV para Latam
 
-🌟 **¡Dale una estrellita para bancar este proyecto!** 🌟
+🌟 **¡Metele una estrella para bancar este proyecto!** 🌟
 
 Este repositorio recopila y comparte algunas listas de reproducción m3u de IPTV, aptas para todo tipo de reproductores, para que sea fácil importar, probar y usar directo.  
 
@@ -11,11 +11,11 @@ Este repositorio recopila y comparte algunas listas de reproducción m3u de IPTV
 1. **Descargar el archivo m3u** - Hacé clic en el nombre del archivo m3u que quieras. Cuando entres a la página del archivo, tocá el botón `Raw` arriba a la derecha, y después clic derecho > "Guardar como" para bajarlo a tu compu.
 
 2. **Importar al reproductor IPTV** - Reproductor recomendado:
-     - [😈 Muy recomendado: Charming Player (Versión PC)](https://github.com/CharmingCheung/CharmingTVBox/releases)
+     - [😈 Recomiendo: Charming Player (Versión PC)](https://github.com/CharmingCheung/CharmingTVBox/releases)
 
 ## 🚀 Algunas listas a mano
 
-Podés copiar y pegar los siguientes enlaces **directamente en tu reproductor**, todos tienen los EPG integrados:
+Tambien podés copiar y pegar las siguientes URLs **directamente en tu reproductor**, todos tienen EPG integrados:
 
 - PlutoTV-AR: 
    ```text
@@ -25,9 +25,13 @@ Podés copiar y pegar los siguientes enlaces **directamente en tu reproductor**,
    ```text
      https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-US.m3u8
 ---
-- PlutoTV-ALL:
+- PlutoTV-World:
    ```text
      https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-World.m3u
+---
+- TVPass:
+   ```text
+     https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/TVPassEpg.m3u
 ---
 
 ## 💡 Aclaraciones y Aviso
@@ -43,6 +47,7 @@ Podés copiar y pegar los siguientes enlaces **directamente en tu reproductor**,
 - [https://github.com/abusaeeidx/IPTV-Scraper-Zilla](https://github.com/abusaeeidx/IPTV-Scraper-Zilla)
 - [https://github.com/evoactivity/PlutoIPTV](https://github.com/evoactivity/PlutoIPTV)
 - [https://github.com/matthuisman/i.mjh.nz](https://github.com/matthuisman/i.mjh.nz)
+- [https://github.com/judy-gotv/iptv](https://github.com/judy-gotv/iptv)
 
 📝 Cualquier consulta, contactame a través de un Pull Request o un Issue.
 
@@ -58,7 +63,7 @@ No lo utilices para ningún fin ilegal o comercial.
 
 Si algún propietario de contenido lo solicita, el proyecto será eliminado.
 
-Respetá los derechos de autor.
+Respetá siempre los derechos de autor.
 
 
 > © 2025 v0ltax 
@@ -66,4 +71,4 @@ Respetá los derechos de autor.
 
 ---
 
-✨ **Si te sirvió, acordate de darle Star para apoyar, ¡gracias!**
+✨ **Si te sirvió, acordate de darle Star para apoyar. Abrazo!**
