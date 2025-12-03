@@ -5,7 +5,7 @@
 # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
 # 🕒 Last Updated: 2025-12-01
 #==================================
-#EXTM3U url-tvg="https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-AR.xml"
+#EXTM3U url-tvg="https://raw.github.com/matthuisman/i.mjh.nz/master/PlutoTV/AR.xml.gz"
 #==================================
 #EXTM3U
 #EXTINF:0 tvg-id="pluto-tv-cine-accion" tvg-logo="http://images.pluto.tv/channels/5dcb62e63d4d8f0009f36881/colorLogoPNG_1760378798093.png" group-title="Películas", Pluto TV Cine Acción
