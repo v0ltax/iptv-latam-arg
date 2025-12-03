@@ -5,7 +5,7 @@
 # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
 # 🕒 Last Updated: 2025-12-02 23:59:09
 #==================================
-#EXTM3U url-tvg="https://raw.github.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml.gz"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-US.xml"
 #==================================
 #EXTINF:0 tvg-id="little-stars-universe" tvg-logo="http://images.pluto.tv/channels/51c75f7bb6f26ba1cd00002f/colorLogoPNG.png" group-title="Kids", Little Stars Universe
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/51c75f7bb6f26ba1cd00002f/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=e41b7430-cfda-11f0-92dd-4535c187259a&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=cd9a6cb9-2236-4d0a-a49f-43f9ad174ae7&userId=&serverSideAds=true
