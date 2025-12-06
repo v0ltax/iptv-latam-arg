@@ -1,8 +1,8 @@
-name: 3. Process TVPass
+name: 2. Process TVPass
 
 on:
   schedule:
-    - cron: '30 3 * * *' # 'minuto hora * * *' -> Todos los días a las 03:30 AM UTC
+    - cron: "0 */4 * * *" # Cada 4 horas
   workflow_dispatch:
 
 permissions:

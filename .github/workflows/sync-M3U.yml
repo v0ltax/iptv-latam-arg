@@ -2,7 +2,7 @@ name: 1. Sync M3U Files
 
 on:
   schedule:
-    - cron: '0 3 * * *' # # 'minuto hora * * *' -> Corre a las 3:00 AM UTC todos los días
+    - cron: "0 */3 * * *" # Cada 3 horas
   workflow_dispatch:
 
 permissions:
