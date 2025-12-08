@@ -18,20 +18,22 @@ Este repositorio recopila y comparte algunas listas de reproducción m3u de IPTV
 Tambien podés copiar y pegar las siguientes URLs **directamente en tu reproductor**, todos tienen EPG integrados:
 
 - PlutoTV-AR: 
-   ```text
-     https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-AR.m3u8
----
+```bash
+https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-AR.m3u8
+```
 - PlutoTV-US:
-   ```text
-     https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-US.m3u8
----
+```bash
+https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-US.m3u8
+```
 - PlutoTV-World:
-   ```text
-     https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-World.m3u
----
+```bash
+https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-World.m3u
+```
 - TVPass:
-   ```text
-     https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/TVPassEpg.m3u
+```bash
+https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/TVPassEpg.m3u
+```
+
 ---
 
 ## 💡 Aclaraciones y Aviso
