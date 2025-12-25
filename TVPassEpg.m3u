@@ -3,7 +3,7 @@
 # 🎯 This repository does NOT host any content.
 # 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
 # 🔗 EPG: https://tvpass.org/
-# 🕒 Last Updated: 2025-12-24 20:13:05
+# 🕒 Last Updated: 2025-12-25 00:57:36
 #==================================
 #EXTM3U url-tvg="https://tvpass.org/epg.xml"
 #==================================
@@ -1069,3 +1069,5 @@ https://tvpass.org/live/WeTVEast/sd
 https://tvpass.org/live/WPIX/sd
 #EXTINF:-1 tvg-id="yes-network" tvg-name="Yes Network" group-title="Live",Yes Network
 https://tvpass.org/live/yes-network/sd
+#EXTINF:-1 tvg-id="" tvg-name="California Golden Bears @ Hawaii Rainbow Warriors (12/24 8:00 PM ET)" group-title="NCAAF",California Golden Bears @ Hawaii Rainbow Warriors (12/24 8:00 PM ET)
+https://tvpass.org/live/ESPN/sd
