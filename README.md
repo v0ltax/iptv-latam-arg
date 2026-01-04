@@ -29,10 +29,6 @@ https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-
 ```bash
 https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-World.m3u
 ```
-- TVPass:
-```bash
-https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/TVPassEpg.m3u
-```
 
 ---
 
