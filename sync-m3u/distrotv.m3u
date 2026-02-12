@@ -2,8 +2,8 @@
 # 🖥️ Developed by: Abu SAEEID X Noob
 # 🔗 GitHub/Telegram: @abusaeeidx
 # 📡 IPTV Telegram Channels: @xfireflixbd
-# 🕒 Last Updated: 2026-02-12 12:56:43 AM (BD Time)
-# 📺 Channels Count : 409
+# 🕒 Last Updated: 2026-02-12 07:52:25 AM (BD Time)
+# 📺 Channels Count : 421
 # 📜 Disclaimer:
 # 🎯 This tool does NOT host any content.
 # 📌 It aggregates publicly available data for informational purposes only.
@@ -106,6 +106,16 @@ https://global.cgtn.cicc.media.caton.cloud/master/cgtn-espanol.m3u8
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/euronews-spa/euronews-es.m3u8
 #EXTINF:-1 tvg-id="al-arabiya" tvg-logo="https://a.jsrdn.com/hls/23137/al-arabiya/poster_20231205_175721.jpg" group-title="News & Opinion",Al Arabiya
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/al-arabiya/master.m3u8
+#EXTINF:-1 tvg-id="carbontv" tvg-logo="https://a.jsrdn.com/hls/23195/carbontv/poster_20260203_222256.jpg" group-title="New Arrivals",CarbonTV
+https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/0QU2LXMHQHCESK6R27B8/hls3/now,-1m/m.m3u8
+#EXTINF:-1 tvg-id="golf-network" tvg-logo="https://a.jsrdn.com/hls/23064/golf-network/poster_20260203_224130.png" group-title="New Arrivals",Golf Network
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/golf-network/manifest.m3u8
+#EXTINF:-1 tvg-id="foosball-tv" tvg-logo="https://a.jsrdn.com/hls/23064/foosball-tv/poster_20260203_224823.png" group-title="New Arrivals",Foosball TV
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/foosball-tv/manifest.m3u8
+#EXTINF:-1 tvg-id="cg-central" tvg-logo="https://a.jsrdn.com/hls/23195/cg-central/poster_20260203_223050.jpg" group-title="New Arrivals",CG Central
+https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/G40OUX9H7Z2JYW72Y3ZY/hls3/now,-1m/m.m3u8
+#EXTINF:-1 tvg-id="spot-on-news" tvg-logo="https://a.jsrdn.com/hls/23195/spot-on-news/poster_20260203_223625.jpg" group-title="New Arrivals",spot on news
+https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/2M5V61S6YGPGM4TXJIXL/hls3/now,-1m/m.m3u8
 #EXTINF:-1 tvg-id="rock-solid-wrestling-tv" tvg-logo="https://a.jsrdn.com/hls/23195/rock-solid-wrestling-tv/poster_20260122_222837.jpg" group-title="New Arrivals",Rock Solid Wrestling TV
 https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/0HQB0C0B3JRT3U7C103F/hls3/now,-1m/m.m3u8
 #EXTINF:-1 tvg-id="punjabi-shorts" tvg-logo="https://a.jsrdn.com/hls/23215/punjabi-shorts/poster_20260122_222119.jpg" group-title="New Arrivals",Punjabi Shorts
@@ -480,6 +490,8 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/22G5UVCESMIOP38D3YET/hls3/now,-1m/m.m3u8
 #EXTINF:-1 tvg-id="axs-tv-now" tvg-logo="https://a.jsrdn.com/hls/23047/axs-tv-now/poster_20220317_001903.jpg" group-title="Entertainment",AXS TV Now
 https://amg00966-amg00966c9-amgplt0081.playout.now3.amagi.tv/playlist/amg00966-amg00966c9-amgplt0081/playlist.m3u8
+#EXTINF:-1 tvg-id="spot-on-news" tvg-logo="https://a.jsrdn.com/hls/23195/spot-on-news/poster_20260203_223625.jpg" group-title="Entertainment",spot on news
+https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/2M5V61S6YGPGM4TXJIXL/hls3/now,-1m/m.m3u8
 #EXTINF:-1 tvg-id="feva-tv" tvg-logo="https://a.jsrdn.com/hls/23132/feva-tv/poster_20231005_221514.png" group-title="Entertainment",FEVA TV
 https://d21x3vavxu7p2x.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/DistroTV-MuxIP-FEVATV/416.m3u8
 #EXTINF:-1 tvg-id="amplified-voices-tv" tvg-logo="https://a.jsrdn.com/hls/23195/amplified-voices-tv/poster_20250617_211359.jpg" group-title="Entertainment",Amplified Voices TV
@@ -488,6 +500,8 @@ https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/0NEDHNB14204IE5V6CIX/hls3/now
 https://api-ott.tidpix.com/loggingmediaurlpassthrough/a.m3u8
 #EXTINF:-1 tvg-id="afrolandtv" tvg-logo="https://a.jsrdn.com/hls/23000/afrolandtv/poster_20211020_185653.png" group-title="Entertainment",AfroLandTV
 https://api-ott.afrolandtv.com/loggingmediaurlpassthrough/a.m3u8
+#EXTINF:-1 tvg-id="cg-central" tvg-logo="https://a.jsrdn.com/hls/23195/cg-central/poster_20260203_223050.jpg" group-title="Entertainment",CG Central
+https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/G40OUX9H7Z2JYW72Y3ZY/hls3/now,-1m/m.m3u8
 #EXTINF:-1 tvg-id="true-african" tvg-logo="https://a.jsrdn.com/hls/23181/true-african/poster_20220218_180755.jpg" group-title="Entertainment",True African
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/true-african/video.m3u8
 #EXTINF:-1 tvg-id="humor-mill" tvg-logo="https://a.jsrdn.com/hls/22867/humor-mill/poster_20200819_235206.jpg" group-title="Entertainment",Humor Mill
@@ -536,8 +550,12 @@ https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/N2IXYNBLLX4DWYFU7VAP/hls3/now
 https://api-ott.skwadplay.com/loggingmediaurlpassthrough/a.m3u8
 #EXTINF:-1 tvg-id="dungeon-tv" tvg-logo="https://a.jsrdn.com/hls/22915/dungeon-tv/poster_20201029_011652.jpg" group-title="Fun & Games",Dungeon TV
 https://stream-us-east-1.getpublica.com/playlist.m3u8
+#EXTINF:-1 tvg-id="foosball-tv" tvg-logo="https://a.jsrdn.com/hls/23064/foosball-tv/poster_20260203_224823.png" group-title="Fun & Games",Foosball TV
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/foosball-tv/manifest.m3u8
 #EXTINF:-1 tvg-id="pll-network" tvg-logo="https://a.jsrdn.com/hls/22964/pll-network/poster_20240626_231935.jpg" group-title="Live Sports",PLL Network
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/pll-network/pllne.m3u8
+#EXTINF:-1 tvg-id="golf-network" tvg-logo="https://a.jsrdn.com/hls/23064/golf-network/poster_20260203_224130.png" group-title="Live Sports",Golf Network
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/golf-network/manifest.m3u8
 #EXTINF:-1 tvg-id="floracing-247" tvg-logo="https://a.jsrdn.com/hls/22883/floracing-247/poster_20230808_180216.png" group-title="Live Sports",FloRacing 24/7
 https://amg02278-amg02278c1-distrotv-us-7534.playouts.now.amagi.tv/playlist/amg02278-flosports-floracing24x7-distrotvus/playlist.m3u8
 #EXTINF:-1 tvg-id="bein-sports-xtra" tvg-logo="https://a.jsrdn.com/hls/23038/bein-sports-xtra/poster_20260205_195855.png" group-title="Live Sports",beIN SPORTS Xtra
@@ -548,6 +566,8 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg02873-kravemedia-mtrspt1-distrotv/p
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bowling-tv/bowl.m3u8
 #EXTINF:-1 tvg-id="billiard-tv" tvg-logo="https://a.jsrdn.com/hls/22964/billiard-tv/poster_20210622_195953.png" group-title="Live Sports",Billiard TV
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/billiard-tv/billi.m3u8
+#EXTINF:-1 tvg-id="foosball-tv" tvg-logo="https://a.jsrdn.com/hls/23064/foosball-tv/poster_20260203_224823.png" group-title="Live Sports",Foosball TV
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/foosball-tv/manifest.m3u8
 #EXTINF:-1 tvg-id="acl-cornhole-tv" tvg-logo="https://a.jsrdn.com/hls/22964/acl-cornhole-tv/poster_20211103_165810.png" group-title="Live Sports",ACL Cornhole TV
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/acl-cornhole-tv/aclco.m3u8
 #EXTINF:-1 tvg-id="court-sports-network" tvg-logo="https://a.jsrdn.com/hls/22930/court-sports-network/poster_20231012_182656.png" group-title="Live Sports",Court Sports Network
@@ -600,8 +620,8 @@ https://d15wqvt0xm15k4.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d2
 https://dg5rg8emlfy55.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/DistroTV-MuxIP-WildNature2/491.m3u8
 #EXTINF:-1 tvg-id="outside-tv" tvg-logo="https://a.jsrdn.com/hls/22765/outside-tv/poster_20220613_202039.png" group-title="Outdoors",Outside
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/outsidetv/playlist.m3u8
-#EXTINF:-1 tvg-id="wired2fish-tv" tvg-logo="https://a.jsrdn.com/hls/22930/wired2fish-tv/poster_20210331_171109.jpg" group-title="Outdoors",Wired2fish TV
-https://ssai.gumgum.com/gs/stream/master/navio/hls.m3u8
+#EXTINF:-1 tvg-id="carbontv" tvg-logo="https://a.jsrdn.com/hls/23195/carbontv/poster_20260203_222256.jpg" group-title="Outdoors",CarbonTV
+https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/0QU2LXMHQHCESK6R27B8/hls3/now,-1m/m.m3u8
 #EXTINF:-1 tvg-id="wild-tv" tvg-logo="https://a.jsrdn.com/hls/23208/wild-tv/poster_20250401_215041.jpg" group-title="Outdoors",Wild TV
 https://d1tm3cz23db55z.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/DistroTV-MuxIP-WildTV/476.m3u8
 #EXTINF:-1 tvg-id="skull-bound-tv" tvg-logo="https://a.jsrdn.com/hls/23195/skull-bound-tv/poster_20250102_202954.jpg" group-title="Outdoors",Skull Bound TV
@@ -612,6 +632,8 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/fuel-tv/playlist.m3u8
 #EXTINF:-1 tvg-id="ski-tv" tvg-logo="https://a.jsrdn.com/hls/22915/ski-tv/poster_20210308_214707.jpg" group-title="Outdoors",Slopes TV
 https://stream-us-east-1.getpublica.com/playlist.m3u8
+#EXTINF:-1 tvg-id="wired2fish-tv" tvg-logo="https://a.jsrdn.com/hls/22930/wired2fish-tv/poster_20210331_171109.jpg" group-title="Outdoors",Wired2fish TV
+https://ssai.gumgum.com/gs/stream/master/navio/hls.m3u8
 #EXTINF:-1 tvg-id="fork-and-flight" tvg-logo="https://a.jsrdn.com/hls/23147/fork-and-flight/poster_20241001_172112.jpg" group-title="Food & Travel",Fork & Flight
 https://amg00346-vizioono-amg00346c1-distrotv-us-1397.playouts.now.amagi.tv/playlist/amg00346-vizioincfast-forkandflight-distrotvus/playlist.m3u8
 #EXTINF:-1 tvg-id="gusto-tv" tvg-logo="https://a.jsrdn.com/hls/23062/gusto-tv/poster_20240328_235541.jpg" group-title="Food & Travel",Gusto TV
@@ -732,6 +754,8 @@ https://amg02784-amg02784c1-distrotv-latam-5650.playouts.now.amagi.tv/playlist/a
 https://d21x3vavxu7p2x.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/DistroTV-MuxIP-FEVATV/416.m3u8
 #EXTINF:-1 tvg-id="tidpix" tvg-logo="https://a.jsrdn.com/hls/23178/tidpix/poster_20240627_212724.jpg" group-title="African",TidPix-Authentically African
 https://api-ott.tidpix.com/loggingmediaurlpassthrough/a.m3u8
+#EXTINF:-1 tvg-id="cg-central" tvg-logo="https://a.jsrdn.com/hls/23195/cg-central/poster_20260203_223050.jpg" group-title="African",CG Central
+https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/G40OUX9H7Z2JYW72Y3ZY/hls3/now,-1m/m.m3u8
 #EXTINF:-1 tvg-id="nigbati-tv" tvg-logo="https://a.jsrdn.com/hls/23195/nigbati-tv/poster_20250109_233316.jpg" group-title="African",Nigbati TV
 https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/ELXULYQ68MHDUFJXLJCP/hls3/now,-1m/m.m3u8
 #EXTINF:-1 tvg-id="amplified-voices-tv" tvg-logo="https://a.jsrdn.com/hls/23195/amplified-voices-tv/poster_20250617_211359.jpg" group-title="African",Amplified Voices TV
