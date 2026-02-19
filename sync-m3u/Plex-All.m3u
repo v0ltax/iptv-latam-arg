@@ -2,7 +2,7 @@
 # 🖥 Developed by: Abu SAEEID X Noob
 # 🔗 GitHub/Telegram: @abusaeeidx
 # 📡 IPTV Telegram Channels: @xfireflixbd
-# 🕒 Last Updated: 2026-02-18 08:43 AM (BD Time)
+# 🕒 Last Updated: 2026-02-19 08:42 AM (BD Time)
 # 📜 Disclaimer:
 # 🎯 This tool does NOT host any content.
 # 📌 It aggregates publicly available data for informational purposes only.
@@ -2510,8 +2510,6 @@ https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-5eea605674085f0040ddc79d.m3u8
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-654a6d313713a28d9f0b917f.m3u8
 #EXTINF:-1 channel-id="6430aa45fc3be5947780904e-6463c9656f010b2857d17e2b-fr" tvg-id="6430aa45fc3be5947780904e-6463c9656f010b2857d17e2b" tvg-chno="" tvg-name="Le Figaro Live" tvg-logo="https://provider-static.plex.tv/epg/cms/production/2c2f4794-33fe-4eb2-8e10-04cb0f707774/1500X1000-logobrigthcolor_-_SECOM_Media_group.png" group-title="France",Le Figaro Live
 https://jmp2.uk/plex-6430aa45fc3be5947780904e-6463c9656f010b2857d17e2b.m3u8
-#EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-668d3bc6aa19f3bf5ee4fd1a-ca" tvg-id="647f8d22a2fc3fadb4721685-668d3bc6aa19f3bf5ee4fd1a" tvg-chno="" tvg-name="Les débatteurs Noovo" tvg-logo="https://provider-static.plex.tv/epg/cms/production/606b58d1-0a4f-43d9-a700-2f4a59bbf2ef/NV_Plex_FastChan_1500x1000_Debatteurs_BlancRDX.png" group-title="Canada",Les débatteurs Noovo
-https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-668d3bc6aa19f3bf5ee4fd1a.m3u8
 #EXTINF:-1 channel-id="6430aa45fc3be5947780904e-68e03beea4f2aa9b08ed5281-fr" tvg-id="6430aa45fc3be5947780904e-68e03beea4f2aa9b08ed5281" tvg-chno="" tvg-name="Les filles d’à côtés TV" tvg-logo="https://provider-static.plex.tv/epg/cms/production/8bb7c0f6-b0d3-447f-afaa-0afe20691452/Logo_suitable_for_dark_backgrounds_Les-Filles-d_a-cote.png" group-title="France",Les filles d’à côtés TV
 https://jmp2.uk/plex-6430aa45fc3be5947780904e-68e03beea4f2aa9b08ed5281.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-66a2df930b91165254efdb46-ca" tvg-id="647f8d22a2fc3fadb4721685-66a2df930b91165254efdb46" tvg-chno="" tvg-name="Let's Make a Deal" tvg-logo="https://provider-static.plex.tv/epg/cms/production/7cf32a69-c1c2-49f7-8db5-00ee4b740a23/LMAD_Plex_Logo_DrkBkg_1500x1000.png" group-title="Canada",Let's Make a Deal
@@ -2538,6 +2536,10 @@ https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-6729212fc1edbd1509fb9d13.m3u8
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-67d06764f14e6c3252dc70eb.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6377ea0e13bb6b1757e14695-us" tvg-id="5e20b730f2f8d5003d739db7-6377ea0e13bb6b1757e14695" tvg-chno="" tvg-name="LiveNOW from FOX" tvg-logo="https://provider-static.plex.tv/7/epg/channels/logos/gracenote/724a2b5cb46150f051d492f356de5e0f.png" group-title="United States",LiveNOW from FOX
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-6377ea0e13bb6b1757e14695.m3u8
+#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-62a2272df7d323d4cc893218-us" tvg-id="5e20b730f2f8d5003d739db7-62a2272df7d323d4cc893218" tvg-chno="" tvg-name="Local Now DC" tvg-logo="https://provider-static.plex.tv/epg/cms/production/13263157-852b-4034-975a-5a48b5ad1742/LN_DC_logo_dark.png" group-title="United States",Local Now DC
+https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-62a2272df7d323d4cc893218.m3u8
+#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-62a787793ccfe207c22a5e5a-us" tvg-id="5e20b730f2f8d5003d739db7-62a787793ccfe207c22a5e5a" tvg-chno="" tvg-name="Local Now Hagerstown" tvg-logo="https://provider-static.plex.tv/epg/cms/production/625183c0-cb7d-4867-acc8-7df1794030a9/LN_Hagerstown_logo_dark.png" group-title="United States",Local Now Hagerstown
+https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-62a787793ccfe207c22a5e5a.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-628ea9fcffe4cec6361f5310-us" tvg-id="5e20b730f2f8d5003d739db7-628ea9fcffe4cec6361f5310" tvg-chno="" tvg-name="LOL! Network" tvg-logo="https://provider-static.plex.tv/epg/cms/production/ccac86b4-f8b8-445a-89ce-1b79927b857c/1500_x_1000_Color_Logo_PLEX.png" group-title="United States",LOL! Network
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-628ea9fcffe4cec6361f5310.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-6196c9241d310bf925e02616-us" tvg-id="5e20b730f2f8d5003d739db7-6196c9241d310bf925e02616" tvg-chno="" tvg-name="Lone Star" tvg-logo="https://provider-static.plex.tv/1/epg/channels/logos/gracenote/1d8c9bf417f3e12668fecafc25fc8f72.png" group-title="United States",Lone Star
@@ -2982,6 +2984,8 @@ https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-6970fa30bde579fb712623ff.m3u8
 https://jmp2.uk/plex-643054b1fc3be59477853717-682d0bc9363625fa508aef43.m3u8
 #EXTINF:-1 channel-id="6430aa45fc3be5947780904e-6827c34ca5c6e573c6904444-fr" tvg-id="6430aa45fc3be5947780904e-6827c34ca5c6e573c6904444" tvg-chno="" tvg-name="Nature Time" tvg-logo="https://provider-static.plex.tv/epg/cms/production/3fbb9b2b-7f53-440d-8f41-6492fe676ea5/NATURE_TIMEWHITE_LOGO.png" group-title="France",Nature Time
 https://jmp2.uk/plex-6430aa45fc3be5947780904e-6827c34ca5c6e573c6904444.m3u8
+#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-64511fb8416ddf4040dd5e53-us" tvg-id="5e20b730f2f8d5003d739db7-64511fb8416ddf4040dd5e53" tvg-chno="" tvg-name="NBC 4 Washington News" tvg-logo="https://provider-static.plex.tv/2/epg/channels/logos/gracenote/27dd791385c4c8dd99a869ebd83501b6.png" group-title="United States",NBC 4 Washington News
+https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-64511fb8416ddf4040dd5e53.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-5fc70600dd53a6002d8f93ca-us" tvg-id="5e20b730f2f8d5003d739db7-5fc70600dd53a6002d8f93ca" tvg-chno="" tvg-name="NBC News NOW" tvg-logo="https://provider-static.plex.tv/7/epg/channels/logos/gracenote/713ea11a46bcb609bc91c386c29076e6.png" group-title="United States",NBC News NOW
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-5fc70600dd53a6002d8f93ca.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-5fc70600dd53a6002d8f93ca-ca" tvg-id="647f8d22a2fc3fadb4721685-5fc70600dd53a6002d8f93ca" tvg-chno="" tvg-name="NBC News NOW" tvg-logo="https://provider-static.plex.tv/7/epg/channels/logos/gracenote/713ea11a46bcb609bc91c386c29076e6.png" group-title="Canada",NBC News NOW
@@ -3110,6 +3114,8 @@ https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-65bd5a538314c24e11553543.m3u8
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-65bd5a538314c24e11553543.m3u8
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-668d3d9c164d5df264c08d2d-ca" tvg-id="647f8d22a2fc3fadb4721685-668d3d9c164d5df264c08d2d" tvg-chno="" tvg-name="Noovo Cinéma" tvg-logo="https://provider-static.plex.tv/epg/cms/production/1074acb8-2aa3-47eb-9af6-090709900359/NV_Plex_FastChan_1500x1000_CIN_Bleu.png" group-title="Canada",Noovo Cinéma
 https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-668d3d9c164d5df264c08d2d.m3u8
+#EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-698fb1938f934d915eb13488-ca" tvg-id="647f8d22a2fc3fadb4721685-698fb1938f934d915eb13488" tvg-chno="" tvg-name="Noovo Crime" tvg-logo="https://provider-static.plex.tv/epg/cms/production/73c1feb7-0ae5-4847-81b8-cc4a47adb195/WHITENV_CRI_Logo_BL_FastCh_PLEX_1500x1000__4_.png" group-title="Canada",Noovo Crime
+https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-698fb1938f934d915eb13488.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-5f0ff262d71dcb00449ec015-us" tvg-id="5e20b730f2f8d5003d739db7-5f0ff262d71dcb00449ec015" tvg-chno="" tvg-name="Nosey" tvg-logo="https://provider-static.plex.tv/epg/cms/production/881d4e9f-10ec-4ca8-9309-17cc1126b768/nosey_green.png" group-title="United States",Nosey
 https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-5f0ff262d71dcb00449ec015.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-5f0ff262d71dcb00449ec015-nz" tvg-id="5e20b730f2f8d5003d739db7-5f0ff262d71dcb00449ec015" tvg-chno="" tvg-name="Nosey" tvg-logo="https://provider-static.plex.tv/epg/cms/production/881d4e9f-10ec-4ca8-9309-17cc1126b768/nosey_green.png" group-title="New Zealand",Nosey
@@ -5080,6 +5086,12 @@ https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-60df3e18541143002f3b8607.m3u8
 https://jmp2.uk/plex-6430aa45fc3be5947780904e-60df3e18541143002f3b8607.m3u8
 #EXTINF:-1 channel-id="64305451fc3be5947773c339-60df3e18541143002f3b8607-gb" tvg-id="64305451fc3be5947773c339-60df3e18541143002f3b8607" tvg-chno="" tvg-name="USA TODAY" tvg-logo="https://provider-static.plex.tv/epg/cms/production/ae42c76a-809f-465b-aed8-cfdc8e33a04b/usatoday_logo_light.png" group-title="United Kingdom",USA TODAY
 https://jmp2.uk/plex-64305451fc3be5947773c339-60df3e18541143002f3b8607.m3u8
+#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-624402b29d5efeceb0d783ae-us" tvg-id="5e20b730f2f8d5003d739db7-624402b29d5efeceb0d783ae" tvg-chno="" tvg-name="Very Baltimore by WBAL-TV" tvg-logo="https://provider-static.plex.tv/epg/cms/staging/a57811b3-c2ae-48bf-9feb-0924052b7914/WBAL_baltimore_logo.png" group-title="United States",Very Baltimore by WBAL-TV
+https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-624402b29d5efeceb0d783ae.m3u8
+#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-62440f5ccc4140a6505193d8-us" tvg-id="5e20b730f2f8d5003d739db7-62440f5ccc4140a6505193d8" tvg-chno="" tvg-name="Very Pennsylvania by WGAL" tvg-logo="https://provider-static.plex.tv/epg/cms/staging/a7d93c3b-8715-4dd0-bef5-0d53b843a174/WGAL_pennsylvania_logo.png" group-title="United States",Very Pennsylvania by WGAL
+https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-62440f5ccc4140a6505193d8.m3u8
+#EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-62440beecc4140a6505193d2-us" tvg-id="5e20b730f2f8d5003d739db7-62440beecc4140a6505193d2" tvg-chno="" tvg-name="Very Pittsburgh by WTAE" tvg-logo="https://provider-static.plex.tv/epg/cms/staging/0d99559c-efe9-42ac-9cc9-ad48f36ac162/WTAE_pittsburgh_logo.png" group-title="United States",Very Pittsburgh by WTAE
+https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-62440beecc4140a6505193d2.m3u8
 #EXTINF:-1 channel-id="643054b1fc3be59477853717-68251044ae4546e02a6ba4f7-es" tvg-id="643054b1fc3be59477853717-68251044ae4546e02a6ba4f7" tvg-chno="" tvg-name="Viajes & Sabores" tvg-logo="https://provider-static.plex.tv/epg/cms/production/03e84b82-8da3-432d-9dfe-fb32927f106e/Logo_Viajes_Sabores_1500x1000_DarkBackground_-_Belen_Bruno.png" group-title="Spain",Viajes & Sabores
 https://jmp2.uk/plex-643054b1fc3be59477853717-68251044ae4546e02a6ba4f7.m3u8
 #EXTINF:-1 channel-id="5e20b730f2f8d5003d739db7-62c47062085f5c338b9c6360-us" tvg-id="5e20b730f2f8d5003d739db7-62c47062085f5c338b9c6360" tvg-chno="" tvg-name="VICE" tvg-logo="https://provider-static.plex.tv/epg/cms/production/7d2a038b-fd7a-4a79-8c7a-2ce78037ec2d/vice_logo_lightrdx.png" group-title="United States",VICE
