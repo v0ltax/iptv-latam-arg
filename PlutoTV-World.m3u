@@ -3,7 +3,7 @@
 # 🎯 This repository does NOT host any content.
 # 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
 # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
-# 🕒 Last Updated: 2026-02-24 20:40:00
+# 🕒 Last Updated: 2026-02-25 02:29:44
 #==================================
 #EXTM3U url-tvg="https://raw.github.com/matthuisman/i.mjh.nz/master/PlutoTV/all.xml.gz"
 #==================================
@@ -2257,8 +2257,6 @@ https://jmp2.uk/plu-67ebbdced2832b463faa1e79.m3u8
 https://jmp2.uk/plu-67ed0c86f7c5d70b90889a51.m3u8
 #EXTINF:-1 channel-id="67a2367e9a300a00086f2688" tvg-id="67a2367e9a300a00086f2688" tvg-chno="437" tvg-name="Jackie Chan Adventures" tvg-logo="https://images.pluto.tv/channels/67a2367e9a300a00086f2688/colorLogoPNG.png" group-title="Action",Jackie Chan Adventures
 https://jmp2.uk/plu-67a2367e9a300a00086f2688.m3u8
-#EXTINF:-1 channel-id="655ca4b94261ca00080b38d2" tvg-id="655ca4b94261ca00080b38d2" tvg-chno="438" tvg-name="Pensacola – Flügel aus Stahl" tvg-logo="https://images.pluto.tv/channels/655ca4b94261ca00080b38d2/colorLogoPNG.png" group-title="Action",Pensacola – Flügel aus Stahl
-https://jmp2.uk/plu-655ca4b94261ca00080b38d2.m3u8
 #EXTINF:-1 channel-id="677fb0231da79bfe4fb0bf4e" tvg-id="677fb0231da79bfe4fb0bf4e" tvg-chno="445" tvg-name="The Real Housewives" tvg-logo="https://images.pluto.tv/channels/677fb0231da79bfe4fb0bf4e/colorLogoPNG_1761917749572.png" group-title="Reality",The Real Housewives
 https://jmp2.uk/plu-677fb0231da79bfe4fb0bf4e.m3u8
 #EXTINF:-1 channel-id="644257fe7cb4b100081ed874" tvg-id="644257fe7cb4b100081ed874" tvg-chno="447" tvg-name="Hell's Kitchen" tvg-logo="https://images.pluto.tv/channels/644257fe7cb4b100081ed874/colorLogoPNG.png" group-title="Reality",Hell's Kitchen
@@ -3253,6 +3251,8 @@ https://jmp2.uk/plu-673f7446030a2c0008231bc3.m3u8
 https://jmp2.uk/plu-63c6e37e636b7e0007ccb635.m3u8
 #EXTINF:-1 channel-id="6582f002a620e3000813b329" tvg-id="6582f002a620e3000813b329" tvg-chno="829" tvg-name="Azteca Deportes Network" tvg-logo="https://images.pluto.tv/channels/6582f002a620e3000813b329/colorLogoPNG.png" group-title="Deportes",Azteca Deportes Network
 https://jmp2.uk/plu-6582f002a620e3000813b329.m3u8
+#EXTINF:-1 channel-id="6320d80a66666000086712d7" tvg-id="6320d80a66666000086712d7" tvg-chno="835" tvg-name="Claro Sports" tvg-logo="https://images.pluto.tv/channels/6320d80a66666000086712d7/colorLogoPNG_1770390122405.png" group-title="Deportes",Claro Sports
+https://jmp2.uk/plu-6320d80a66666000086712d7.m3u8
 #EXTINF:-1 channel-id="63f7e3f9dff38e00082a57af" tvg-id="63f7e3f9dff38e00082a57af" tvg-chno="839" tvg-name="ITV Deportes" tvg-logo="https://images.pluto.tv/channels/63f7e3f9dff38e00082a57af/colorLogoPNG.png" group-title="Deportes",ITV Deportes
 https://jmp2.uk/plu-63f7e3f9dff38e00082a57af.m3u8
 #EXTINF:-1 channel-id="5e98b0447665f200078caded" tvg-id="5e98b0447665f200078caded" tvg-chno="850" tvg-name="Pluto TV Peleas" tvg-logo="https://images.pluto.tv/channels/5e98b0447665f200078caded/colorLogoPNG.png" group-title="Deportes",Pluto TV Peleas
@@ -5327,6 +5327,8 @@ https://jmp2.uk/plu-673f7446030a2c0008231bc3.m3u8
 https://jmp2.uk/plu-5dcde07af1c85b0009b18651.m3u8
 #EXTINF:-1 channel-id="6582f002a620e3000813b329" tvg-id="6582f002a620e3000813b329" tvg-chno="829" tvg-name="Azteca Deportes Network" tvg-logo="https://images.pluto.tv/channels/6582f002a620e3000813b329/colorLogoPNG.png" group-title="Deportes",Azteca Deportes Network
 https://jmp2.uk/plu-6582f002a620e3000813b329.m3u8
+#EXTINF:-1 channel-id="6320d80a66666000086712d7" tvg-id="6320d80a66666000086712d7" tvg-chno="835" tvg-name="Claro Sports" tvg-logo="https://images.pluto.tv/channels/6320d80a66666000086712d7/colorLogoPNG_1770390122405.png" group-title="Deportes",Claro Sports
+https://jmp2.uk/plu-6320d80a66666000086712d7.m3u8
 #EXTINF:-1 channel-id="63f7e3f9dff38e00082a57af" tvg-id="63f7e3f9dff38e00082a57af" tvg-chno="839" tvg-name="ITV Deportes" tvg-logo="https://images.pluto.tv/channels/63f7e3f9dff38e00082a57af/colorLogoPNG.png" group-title="Deportes",ITV Deportes
 https://jmp2.uk/plu-63f7e3f9dff38e00082a57af.m3u8
 #EXTINF:-1 channel-id="5e98b0447665f200078caded" tvg-id="5e98b0447665f200078caded" tvg-chno="850" tvg-name="Pluto TV Peleas" tvg-logo="https://images.pluto.tv/channels/5e98b0447665f200078caded/colorLogoPNG.png" group-title="Deportes",Pluto TV Peleas
