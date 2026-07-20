@@ -1,4 +1,4 @@
-name: 3. Process Pluto World
+name: 2. Process Pluto World
 
 on:
   schedule:
@@ -16,69 +16,41 @@ jobs:
       - name: Checkout del repo
         uses: actions/checkout@v4
 
+        # ==========================================
+      # PROCESAR ARCHIVOS PLUTO -> RAÍZ
       # ==========================================
-      # 1. PROCESAR PLUTO ALL -> RAÍZ
-      # ==========================================
-      - name: Editar plutotv_all + header
+      - name: Procesar listas Pluto (All, Mx, Us) + header
         run: |
-          if [ -f "sync-m3u/plutotv_all.m3u" ]; then
-            echo "Archivo plutotv_all encontrado. Procesando..."
-            
-            # Fecha actual
-            FECHA=$(date +"%Y-%m-%d %H:%M:%S")
+          # 1. Fecha actual única para todos los archivos
+          FECHA=$(date +"%Y-%m-%d %H:%M:%S")
           
-            # Armar el Header de forma segura sin EOF
-            printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/BuddyChewChew/app-m3u-generator\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
-          
-            # Pegar Header + Contenido Completo del original directo a la raíz
-            cat header_temp.txt > plutotv_all.m3u
-            cat "sync-m3u/plutotv_all.m3u" >> plutotv_all.m3u
-            
-            # Limpiar temporal
-            rm header_temp.txt
-          else
-            echo "⚠️ No se encontró sync-m3u/plutotv_all.m3u."
-          fi
+          # 2. Armar el Header una sola vez en un temporal
+          printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/BuddyChewChew/app-m3u-generator\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
 
-      # ==========================================
-      # 2. PROCESAR PLUTO MX -> RAÍZ
-      # ==========================================
-      - name: Editar plutotv_mx + header
-        run: |
-          if [ -f "sync-m3u/plutotv_mx.m3u" ]; then
-            echo "Archivo plutotv_mx encontrado. Procesando..."
-            
-            FECHA=$(date +"%Y-%m-%d %H:%M:%S")
-          
-            printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/BuddyChewChew/app-m3u-generator\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
-          
-            cat header_temp.txt > plutotv_mx.m3u
-            cat "sync-m3u/plutotv_mx.m3u" >> plutotv_mx.m3u
-            
-            rm header_temp.txt
-          else
-            echo "⚠️ No se encontró sync-m3u/plutotv_mx.m3u."
-          fi
+          # 3. Lista de archivos a procesar
+          ARCHIVOS=("plutotv_all.m3u" "plutotv_mx.m3u" "plutotv_us.m3u")
 
-      # ==========================================
-      # 3. PROCESAR PLUTO US -> RAÍZ
-      # ==========================================
-      - name: Editar plutotv_us + header
-        run: |
-          if [ -f "sync-m3u/plutotv_us.m3u" ]; then
-            echo "Archivo plutotv_us encontrado. Procesando..."
+          # 4. Bucle para procesar cada uno sin repetir código
+          for archivo in "${ARCHIVOS[@]}"; do
+            ruta_origen="sync-m3u/$archivo"
             
-            FECHA=$(date +"%Y-%m-%d %H:%M:%S")
-          
-            printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/BuddyChewChew/app-m3u-generator\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
-          
-            cat header_temp.txt > plutotv_us.m3u
-            cat "sync-m3u/plutotv_us.m3u" >> plutotv_us.m3u
-            
-            rm header_temp.txt
-          else
-            echo "⚠️ No se encontró sync-m3u/plutotv_us.m3u."
-          fi
+            if [ -f "$ruta_origen" ]; then
+              echo "Procesando $archivo..."
+              
+              # Copiamos el header al archivo final en la raíz
+              cat header_temp.txt > "$archivo"
+              
+              # Le pegamos el contenido original abajo
+              cat "$ruta_origen" >> "$archivo"
+              
+              echo "✓ Guardado en raíz: $archivo"
+            else
+              echo "⚠️ No se encontró $ruta_origen"
+            fi
+          done
+
+          # 5. Limpiar el temporal al terminar todo
+          rm -f header_temp.txt
 
       # ==========================================
       # COMMIT Y PUSH EN LA RAÍZ
