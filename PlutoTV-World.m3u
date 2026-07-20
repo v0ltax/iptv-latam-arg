@@ -3,11 +3,10 @@
 # 🎯 This repository does NOT host any content.
 # 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
 # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
-# 🕒 Last Updated: 2026-07-20 12:18:01
+# 🕒 Last Updated: 2026-07-20 16:44:47
 #==================================
 #EXTM3U url-tvg="https://raw.github.com/matthuisman/i.mjh.nz/master/PlutoTV/all.xml.gz"
 #==================================
-
 #EXTM3U
 #EXTINF:-1 channel-id="673247127d5da5000817b4d6" tvg-id="673247127d5da5000817b4d6" tvg-chno="5" tvg-name="Pluto TV Trending Now" tvg-logo="https://images.pluto.tv/channels/673247127d5da5000817b4d6/colorLogoPNG_1732662634386.png" group-title="Movies",Pluto TV Trending Now
 https://jmp2.uk/plu-673247127d5da5000817b4d6.m3u8
