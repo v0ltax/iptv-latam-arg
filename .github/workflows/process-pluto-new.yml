@@ -16,56 +16,83 @@ jobs:
       - name: Checkout del repo
         uses: actions/checkout@v4
 
-      - name: Editar PlutoTV + header
+      # ==========================================
+      # 1. PROCESAR PLUTO ALL
+      # ==========================================
+      - name: Editar plutotv_all + header
         run: |
-          # 1. Fecha actual para el header
-          FECHA=$(date +"%Y-%m-%d %H:%M:%S")
+          if [ -f "sync-m3u/plutotv_all.m3u" ]; then
+            echo "Archivo plutotv_all encontrado. Procesando..."
+            
+            # Fecha actual
+            FECHA=$(date +"%Y-%m-%d %H:%M:%S")
+          
+            # Armar el Header de forma segura sin EOF
+            printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
+          
+            # Pegar Header + Contenido Completo (sin borrar nada del original)
+            cat header_temp.txt > sync-m3u/plutotv_all.temp
+            cat "sync-m3u/plutotv_all.m3u" >> sync-m3u/plutotv_all.temp
+            
+            # Reemplazar archivo final y limpiar
+            mv sync-m3u/plutotv_all.temp sync-m3u/plutotv_all.m3u
+            rm header_temp.txt
+          else
+            echo "⚠️ No se encontró sync-m3u/plutotv_all.m3u."
+          fi
 
-          # 2. Lista de archivos que descargó el otro workflow
-          ARCHIVOS=("plutotv_all.m3u" "plutotv_mx.m3u" "plutotv_us.m3u")
+      # ==========================================
+      # 2. PROCESAR PLUTO MX
+      # ==========================================
+      - name: Editar plutotv_mx + header
+        run: |
+          if [ -f "sync-m3u/plutotv_mx.m3u" ]; then
+            echo "Archivo plutotv_mx encontrado. Procesando..."
+            
+            FECHA=$(date +"%Y-%m-%d %H:%M:%S")
+          
+            printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
+          
+            cat header_temp.txt > sync-m3u/plutotv_mx.temp
+            cat "sync-m3u/plutotv_mx.m3u" >> sync-m3u/plutotv_mx.temp
+            
+            mv sync-m3u/plutotv_mx.temp sync-m3u/plutotv_mx.m3u
+            rm header_temp.txt
+          else
+            echo "⚠️ No se encontró sync-m3u/plutotv_mx.m3u."
+          fi
 
-          for archivo in "${ARCHIVOS[@]}"; do
-            ruta_origen="sync-m3u/$archivo"
+      # ==========================================
+      # 3. PROCESAR PLUTO US
+      # ==========================================
+      - name: Editar plutotv_us + header
+        run: |
+          if [ -f "sync-m3u/plutotv_us.m3u" ]; then
+            echo "Archivo plutotv_us encontrado. Procesando..."
+            
+            FECHA=$(date +"%Y-%m-%d %H:%M:%S")
+          
+            printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
+          
+            cat header_temp.txt > sync-m3u/plutotv_us.temp
+            cat "sync-m3u/plutotv_us.m3u" >> sync-m3u/plutotv_us.temp
+            
+            mv sync-m3u/plutotv_us.temp sync-m3u/plutotv_us.m3u
+            rm header_temp.txt
+          else
+            echo "⚠️ No se encontró sync-m3u/plutotv_us.m3u."
+          fi
 
-            if [ -f "$ruta_origen" ]; then
-              echo "Procesando $archivo..."
-
-              # Definimos el nombre del archivo final en la raíz
-              if [ "$archivo" = "plutotv_all.m3u" ]; then nombre_final="PlutoTV-World.m3u"; fi
-              if [ "$archivo" = "plutotv_mx.m3u" ]; then nombre_final="PlutoTV-Mx.m3u"; fi
-              if [ "$archivo" = "plutotv_us.m3u" ]; then nombre_final="PlutoTV-Us.m3u"; fi
-
-              # 3. Armar los comentarios informativos del Header
-              cat <<EOF > header_temp.txt
-#=================================
-# 🖥 Developed by: v0ltax
-# 🎯 This repository does NOT host any content.
-# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
-# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
-# 🕒 Last Updated: $FECHA
-#==================================
-EOF
-
-              # 4. Pegar comentarios + el archivo original ENTERO (sin borrar nada)
-              cat header_temp.txt > temp.m3u
-              cat "$ruta_origen" >> temp.m3u
-              
-              # 5. Mover a la raíz y limpiar temporales
-              mv temp.m3u "./$nombre_final"
-              rm header_temp.txt
-              echo "✓ Creado: $nombre_final"
-            else
-              echo "⚠️ No se encontró $ruta_origen en sync-m3u."
-            fi
-          done
-
+      # ==========================================
+      # COMMIT Y PUSH DE LA CARPETA
+      # ==========================================
       - name: Commit y Push
         run: |
           git config --global user.name 'GitHub Action Bot'
           git config --global user.email 'action@github.com'
           
-          # Agregamos los tres archivos modificados de la raíz
-          git add PlutoTV-World.m3u PlutoTV-Mx.m3u PlutoTV-Us.m3u 2>/dev/null || true
+          # Agregamos toda la carpeta sync-m3u con los archivos modificados
+          git add sync-m3u/
           
           # Commit si cambió algo
           git diff --cached --quiet || (git commit -m "Update: Pluto TV lists con fecha" && git push)
