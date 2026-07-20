@@ -18,19 +18,14 @@ jobs:
 
       - name: Editar PlutoTV + header
         run: |
-          # Chequeamos si el archivo existe (del workflow anterior)
+          # Chequeamos si el archivo existe en la carpeta sync-m3u
           if [ -f "sync-m3u/PlutoTV-All.m3u" ]; then
             echo "Archivo encontrado. Procesando..."
             
-            # 1. Moverlo a la raíz con nombre nuevo
-            # Usamos cp en vez de mv para dejar una copia en sync por las dudas, 
-            # o mv si querés sacarlo de ahí. Voy con cp para no romper la carpeta sync.
-            cp "sync-m3u/PlutoTV-All.m3u" ./PlutoTV-World.m3u
-            
-            # 2. Fecha actual
+            # 1. Fecha actual
             FECHA=$(date +"%Y-%m-%d %H:%M:%S")
 
-            # 3. Armar el Header
+            # 2. Armar el Header con EOF (respetando tu bloque original)
             cat <<EOF > header_temp.txt
           #=================================
           # 🖥 Developed by: v0ltax
@@ -43,13 +38,16 @@ jobs:
           #==================================
           EOF
 
-            # 4. Pegar Header + Contenido (borrando la 1ra línea del original)
-            cat header_temp.txt > PlutoTV-World.temp
-            tail -n +12 PlutoTV-World.m3u >> PlutoTV-World.temp
+            # 3. Procesar todo en archivos temporales primero
+            cat header_temp.txt > temp_final.m3u
+            tail -n +12 "sync-m3u/PlutoTV-All.m3u" >> temp_final.m3u
             
-            # 5. Reemplazar archivo final y limpiar
-            mv PlutoTV-World.temp PlutoTV-World.m3u
+            # 4. AL FINAL DE TODO: Mover a la raíz con el nombre definitivo
+            mv temp_final.m3u ./plutotv_all.m3u
+            
+            # Limpiar el header temporal
             rm header_temp.txt
+            echo "✓ Todo listo. Archivo enviado a la raíz como plutotv_all.m3u"
             
           else
             echo "⚠️ No se encontró sync-m3u/PlutoTV-All.m3u. Quizás falló la descarga anterior."
@@ -61,8 +59,8 @@ jobs:
           git config --global user.name 'GitHub Action Bot'
           git config --global user.email 'action@github.com'
           
-          # Agregamos el archivo de la raíz
-          git add PlutoTV-World.m3u
+          # Agregamos el archivo con su nombre en la raíz
+          git add plutotv_all.m3u
           
-          # Commit si cambió algo (ej: la fecha o canales nuevos)
-          git diff --cached --quiet || (git commit -m "Update: Pluto World m3u + epg" && git push)
+          # Commit si cambió algo
+          git diff --cached --quiet || (git commit -m "Update: Pluto All m3u + epg" && git push)

@@ -16,7 +16,7 @@ jobs:
       - name: Checkout del repo
         uses: actions/checkout@v4
 
-        # ==========================================
+      # ==========================================
       # PROCESAR ARCHIVOS PLUTO -> RAÍZ
       # ==========================================
       - name: Procesar listas Pluto (All, Mx, Us) + header
@@ -27,23 +27,33 @@ jobs:
           # 2. Armar el Header una sola vez en un temporal
           printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U: https://github.com/BuddyChewChew/app-m3u-generator\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
 
-          # 3. Lista de archivos a procesar
+          # 3. Lista de archivos origen a buscar en sync-m3u/
           ARCHIVOS=("plutotv_all.m3u" "plutotv_mx.m3u" "plutotv_us.m3u")
 
-          # 4. Bucle para procesar cada uno sin repetir código
+          # 4. Bucle para procesar cada uno
           for archivo in "${ARCHIVOS[@]}"; do
             ruta_origen="sync-m3u/$archivo"
             
             if [ -f "$ruta_origen" ]; then
               echo "Procesando $archivo..."
               
-              # Copiamos el header al archivo final en la raíz
-              cat header_temp.txt > "$archivo"
+              # Si es la lista 'all', el archivo final en la raíz se llamará 'plutotv_world.m3u'
+              if [ "$archivo" = "plutotv_all.m3u" ]; then
+                archivo_salida="plutotv_world.m3u"
+              else
+                archivo_salida="$archivo"
+              fi
+              
+              # Copiamos el header al archivo final temporal
+              cat header_temp.txt > temp_final.m3u
               
               # Le pegamos el contenido original abajo
-              cat "$ruta_origen" >> "$archivo"
+              cat "$ruta_origen" >> temp_final.m3u
               
-              echo "✓ Guardado en raíz: $archivo"
+              # Movemos el resultado final a la raíz con su nombre correspondiente
+              mv temp_final.m3u "./$archivo_salida"
+              
+              echo "✓ Guardado en raíz como: $archivo_salida"
             else
               echo "⚠️ No se encontró $ruta_origen"
             fi
@@ -60,8 +70,8 @@ jobs:
           git config --global user.name 'GitHub Action Bot'
           git config --global user.email 'action@github.com'
           
-          # Agregamos los tres archivos creados en la raíz
-          git add plutotv_all.m3u plutotv_mx.m3u plutotv_us.m3u
+          # Agregamos los archivos con el nuevo nombre en la raíz
+          git add plutotv_world.m3u plutotv_mx.m3u plutotv_us.m3u
           
           # Commit si cambió algo
-          git diff --cached --quiet || (git commit -m "Update: Pluto m3u + epg" && git push)
+          git diff --cached --quiet || (git commit -m "Update: Pluto MX US World m3u + epg" && git push)
