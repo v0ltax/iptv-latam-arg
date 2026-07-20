@@ -1,8 +1,8 @@
 name: 1. Sync M3U Files
 
-#on:
-#  schedule:
-#    - cron: "0 */12 * * *" # Cada 12 horas
+on:
+  schedule:
+    - cron: "0 */12 * * *" # Cada 12 horas
   workflow_dispatch:
 
 permissions:
@@ -21,20 +21,35 @@ jobs:
           # 1. Creamos la carpeta limpia
           mkdir -p sync-m3u
           
-          # 2. Buscamos las URLs
-          echo "Buscando archivos m3u/m3u8..."
+          # ==========================================
+          # REPO 1: IPTV-Scraper-Zilla
+          # ==========================================
+          echo "Buscando archivos m3u/m3u8 en Repo 1..."
           curl -s https://api.github.com/repos/abusaeeidx/IPTV-Scraper-Zilla/contents \
           | jq -r '.[] | select(.name | test("\\.(m3u8?)$")) | .download_url' > urls.txt
           
-          # 3. Bajamos todo adentro de la carpeta
           while read -r url; do
             [ -z "$url" ] && continue
             filename=$(basename "$url")
-            # echo "Bajando $filename..."
             curl -L -s -o "sync-m3u/$filename" "$url"
           done < urls.txt
           
-          rm urls.txt
+          rm -f urls.txt
+
+          # ==========================================
+          # REPO 2: BuddyChewChew (Carpeta playlists)
+          # ==========================================
+          echo "Buscando archivos m3u/m3u8 en Repo 2..."
+          curl -s https://api.github.com/repos/BuddyChewChew/app-m3u-generator/contents/playlists \
+          | jq -r '.[] | select(.name | test("\\.(m3u8?)$")) | .download_url' > urls.txt
+          
+          while read -r url; do
+            [ -z "$url" ] && continue
+            filename=$(basename "$url")
+            curl -L -s -o "sync-m3u/$filename" "$url"
+          done < urls.txt
+          
+          rm -f urls.txt
 
       - name: Commit y Push
         run: |
