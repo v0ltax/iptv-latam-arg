@@ -64,4 +64,4 @@ jobs:
           git add plutotv_all.m3u plutotv_mx.m3u plutotv_us.m3u
           
           # Commit si cambió algo
-          git diff --cached --quiet || (git commit -m "Update: Pluto TV lists en la raíz con fecha" && git push)
+          git diff --cached --quiet || (git commit -m "Update: Pluto m3u + epg" && git push)
