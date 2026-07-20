@@ -1,0 +1,122 @@
+name: 2. Process Pluto
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # Cada 6 horas
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  process-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repo
+        uses: actions/checkout@v4
+
+      # ==========================================
+      # 1. PROCESAR PLUTO ALL
+      # ==========================================
+      - name: Editar plutotv_all + header
+        run: |
+          if [ -f "sync-m3u/plutotv_all.m3u" ]; then
+            echo "Archivo plutotv_all encontrado. Procesando..."
+            
+            # Fecha actual
+            FECHA=$(date +"%Y-%m-%d %H:%M:%S")
+
+            # Armar el Header (solo comentarios con la fecha)
+            cat <<EOF > header_temp.txt
+#=================================
+# 🖥 Developed by: v0ltax
+# 🎯 This repository does NOT host any content.
+# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
+# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
+# 🕒 Last Updated: $FECHA
+#==================================
+EOF
+
+            # Pegar Header + Contenido Completo (sin borrar nada del original)
+            cat header_temp.txt > sync-m3u/plutotv_all.temp
+            cat "sync-m3u/plutotv_all.m3u" >> sync-m3u/plutotv_all.temp
+            
+            # Reemplazar archivo final y limpiar
+            mv sync-m3u/plutotv_all.temp sync-m3u/plutotv_all.m3u
+            rm header_temp.txt
+          else
+            echo "⚠️ No se encontró sync-m3u/plutotv_all.m3u."
+          fi
+
+      # ==========================================
+      # 2. PROCESAR PLUTO MX
+      # ==========================================
+      - name: Editar plutotv_mx + header
+        run: |
+          if [ -f "sync-m3u/plutotv_mx.m3u" ]; then
+            echo "Archivo plutotv_mx encontrado. Procesando..."
+            
+            FECHA=$(date +"%Y-%m-%d %H:%M:%S")
+
+            cat <<EOF > header_temp.txt
+#=================================
+# 🖥 Developed by: v0ltax
+# 🎯 This repository does NOT host any content.
+# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
+# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
+# 🕒 Last Updated: $FECHA
+#==================================
+EOF
+
+            cat header_temp.txt > sync-m3u/plutotv_mx.temp
+            cat "sync-m3u/plutotv_mx.m3u" >> sync-m3u/plutotv_mx.temp
+            
+            mv sync-m3u/plutotv_mx.temp sync-m3u/plutotv_mx.m3u
+            rm header_temp.txt
+          else
+            echo "⚠️ No se encontró sync-m3u/plutotv_mx.m3u."
+          fi
+
+      # ==========================================
+      # 3. PROCESAR PLUTO US
+      # ==========================================
+      - name: Editar plutotv_us + header
+        run: |
+          if [ -f "sync-m3u/plutotv_us.m3u" ]; then
+            echo "Archivo plutotv_us encontrado. Procesando..."
+            
+            FECHA=$(date +"%Y-%m-%d %H:%M:%S")
+
+            cat <<EOF > header_temp.txt
+#=================================
+# 🖥 Developed by: v0ltax
+# 🎯 This repository does NOT host any content.
+# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
+# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
+# 🕒 Last Updated: $FECHA
+#==================================
+EOF
+
+            cat header_temp.txt > sync-m3u/plutotv_us.temp
+            cat "sync-m3u/plutotv_us.m3u" >> sync-m3u/plutotv_us.temp
+            
+            mv sync-m3u/plutotv_us.temp sync-m3u/plutotv_us.m3u
+            rm header_temp.txt
+          else
+            echo "⚠️ No se encontró sync-m3u/plutotv_us.m3u."
+          fi
+
+      # ==========================================
+      # COMMIT Y PUSH DE LA CARPETA
+      # ==========================================
+      - name: Commit y Push
+        run: |
+          git config --global user.name 'GitHub Action Bot'
+          git config --global user.email 'action@github.com'
+          
+          # Agregamos toda la carpeta sync-m3u con los archivos modificados
+          git add sync-m3u/
+          
+          # Commit si cambió algo
+          git diff --cached --quiet || (git commit -m "Update: Pluto TV lists con fecha" && git push)
