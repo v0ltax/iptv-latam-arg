@@ -25,7 +25,7 @@ https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/plutotv_
 ```bash
 https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/plutotv_us.m3u
 ```
-- PlutoTV-World:
+- PlutoTV-All:
 ```bash
 https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/plutotv_all.m3u
 ```
