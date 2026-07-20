@@ -19,7 +19,7 @@ Tambien podés copiar y pegar las siguientes URLs **directamente en tu reproduct
 
 - PlutoTV-MX: 
 ```bash
-https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/plutotv_mx_.m3u
+https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/plutotv_mx.m3u
 ```
 - PlutoTV-US:
 ```bash

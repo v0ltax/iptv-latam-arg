@@ -28,7 +28,7 @@ jobs:
             FECHA=$(date +"%Y-%m-%d %H:%M:%S")
           
             # Armar el Header de forma segura sin EOF
-            printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
+            printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/BuddyChewChew/app-m3u-generator\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
           
             # Pegar Header + Contenido Completo del original directo a la raíz
             cat header_temp.txt > plutotv_all.m3u
@@ -50,7 +50,7 @@ jobs:
             
             FECHA=$(date +"%Y-%m-%d %H:%M:%S")
           
-            printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
+            printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/BuddyChewChew/app-m3u-generator\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
           
             cat header_temp.txt > plutotv_mx.m3u
             cat "sync-m3u/plutotv_mx.m3u" >> plutotv_mx.m3u
@@ -70,7 +70,7 @@ jobs:
             
             FECHA=$(date +"%Y-%m-%d %H:%M:%S")
           
-            printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
+            printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/BuddyChewChew/app-m3u-generator\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
           
             cat header_temp.txt > plutotv_us.m3u
             cat "sync-m3u/plutotv_us.m3u" >> plutotv_us.m3u
