@@ -1,10 +1,3 @@
-#=================================
-# 🖥 Developed by: v0ltax
-# 🎯 This repository does NOT host any content.
-# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
-# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
-# 🕒 Last Updated: 2026-07-20 14:29:47
-#==================================
 #EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/all.xml.gz"
 #EXTINF:-1 channel-id="62ba60f059624e000781c436-us" tvg-id="62ba60f059624e000781c436" tvg-chno="160" tvg-name="00s Replay" tvg-logo="https://images.pluto.tv/channels/62ba60f059624e000781c436/colorLogoPNG.png" group-title="United States",00s Replay
 https://jmp2.uk/plu-62ba60f059624e000781c436.m3u8
