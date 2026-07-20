@@ -1,8 +1,8 @@
 name: 3. Process Pluto World
 
-#on:
-#  schedule:
-#    - cron: "0 */6 * * *" # Cada 6 horas
+on:
+  schedule:
+    - cron: "0 */6 * * *" # Cada 6 horas
   workflow_dispatch:
 
 permissions:
@@ -45,7 +45,7 @@ jobs:
 
             # 4. Pegar Header + Contenido (borrando la 1ra línea del original)
             cat header_temp.txt > PlutoTV-World.temp
-            tail -n +11 PlutoTV-World.m3u >> PlutoTV-World.temp
+            tail -n +12 PlutoTV-World.m3u >> PlutoTV-World.temp
             
             # 5. Reemplazar archivo final y limpiar
             mv PlutoTV-World.temp PlutoTV-World.m3u
