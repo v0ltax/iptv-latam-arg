@@ -37,14 +37,14 @@ jobs:
 
               # 3. Armar los comentarios informativos del Header
               cat <<EOF > header_temp.txt
-              #=================================
-              # 🖥 Developed by: v0ltax
-              # 🎯 This repository does NOT host any content.
-              # 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
-              # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
-              # 🕒 Last Updated: $FECHA
-              #==================================
-              EOF
+#=================================
+# 🖥 Developed by: v0ltax
+# 🎯 This repository does NOT host any content.
+# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
+# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
+# 🕒 Last Updated: $FECHA
+#==================================
+EOF
 
               # 4. Pegar comentarios + el archivo original ENTERO (sin borrar nada)
               cat header_temp.txt > temp.m3u
