@@ -29,14 +29,14 @@ jobs:
 
             # Armar el Header (solo comentarios con la fecha)
             cat <<EOF > header_temp.txt
-          #=================================
-          # 🖥 Developed by: v0ltax
-          # 🎯 This repository does NOT host any content.
-          # 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
-          # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
-          # 🕒 Last Updated: $FECHA
-          #==================================
-          EOF
+            #=================================
+            # 🖥 Developed by: v0ltax
+            # 🎯 This repository does NOT host any content.
+            # 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla
+            # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
+            # 🕒 Last Updated: $FECHA
+            #==================================
+            EOF
 
             # Pegar Header + Contenido Completo (sin borrar nada del original)
             cat header_temp.txt > sync-m3u/plutotv_all.temp
