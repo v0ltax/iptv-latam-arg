@@ -1,4 +1,4 @@
-name: 2. Process Pluto World
+name: 2. Process PlutoTV
 
 on:
   schedule:
@@ -25,7 +25,7 @@ jobs:
           FECHA=$(date +"%Y-%m-%d %H:%M:%S")
           
           # 2. Armar el Header una sola vez en un temporal
-          printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/BuddyChewChew/app-m3u-generator\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
+          printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U: https://github.com/BuddyChewChew/app-m3u-generator\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
 
           # 3. Lista de archivos a procesar
           ARCHIVOS=("plutotv_all.m3u" "plutotv_mx.m3u" "plutotv_us.m3u")
