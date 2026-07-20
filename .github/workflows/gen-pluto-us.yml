@@ -1,8 +1,8 @@
 name: 4. Generate Pluto TV (US)
 
-#on:
-#  schedule:
-#    - cron: "0 */6 * * *" # Cada 6 horas
+on:
+  schedule:
+    - cron: "0 */6 * * *" # Cada 6 horas
   workflow_dispatch:
 
 permissions:

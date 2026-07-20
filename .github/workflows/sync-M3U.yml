@@ -1,8 +1,8 @@
 name: 1. Sync M3U Files
 
-#on:
-#  schedule:
-#    - cron: "0 */12 * * *" # Cada 12 horas
+on:
+  schedule:
+    - cron: "0 */12 * * *" # Cada 12 horas
   workflow_dispatch:
 
 permissions:
