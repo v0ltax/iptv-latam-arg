@@ -1,4 +1,4 @@
-name: 3. Process PlutoTV
+name: 3. Process Pluto World
 
 on:
   schedule:
@@ -16,12 +16,8 @@ jobs:
       - name: Checkout del repo
         uses: actions/checkout@v4
 
-      # Asegurar que la carpeta content exista en la raíz
-      - name: Crear carpeta content si no existe
-        run: mkdir -p content
-
       # ==========================================
-      # 1. PROCESAR PLUTO ALL -> CONTENT
+      # 1. PROCESAR PLUTO ALL -> RAÍZ
       # ==========================================
       - name: Editar plutotv_all + header
         run: |
@@ -34,9 +30,9 @@ jobs:
             # Armar el Header de forma segura sin EOF
             printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
           
-            # Pegar Header + Contenido Completo del original
-            cat header_temp.txt > content/plutotv_all.m3u
-            cat "sync-m3u/plutotv_all.m3u" >> content/plutotv_all.m3u
+            # Pegar Header + Contenido Completo del original directo a la raíz
+            cat header_temp.txt > plutotv_all.m3u
+            cat "sync-m3u/plutotv_all.m3u" >> plutotv_all.m3u
             
             # Limpiar temporal
             rm header_temp.txt
@@ -45,7 +41,7 @@ jobs:
           fi
 
       # ==========================================
-      # 2. PROCESAR PLUTO MX -> CONTENT
+      # 2. PROCESAR PLUTO MX -> RAÍZ
       # ==========================================
       - name: Editar plutotv_mx + header
         run: |
@@ -56,8 +52,8 @@ jobs:
           
             printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
           
-            cat header_temp.txt > content/plutotv_mx.m3u
-            cat "sync-m3u/plutotv_mx.m3u" >> content/plutotv_mx.m3u
+            cat header_temp.txt > plutotv_mx.m3u
+            cat "sync-m3u/plutotv_mx.m3u" >> plutotv_mx.m3u
             
             rm header_temp.txt
           else
@@ -65,7 +61,7 @@ jobs:
           fi
 
       # ==========================================
-      # 3. PROCESAR PLUTO US -> CONTENT
+      # 3. PROCESAR PLUTO US -> RAÍZ
       # ==========================================
       - name: Editar plutotv_us + header
         run: |
@@ -76,8 +72,8 @@ jobs:
           
             printf "#=================================\n# 🖥 Developed by: v0ltax\n# 🎯 This repository does NOT host any content.\n# 🔗 M3U8: https://github.com/abusaeeidx/IPTV-Scraper-Zilla\n# 🔗 EPG: https://github.com/matthuisman/i.mjh.nz\n# 🕒 Last Updated: %s\n#==================================\n" "$FECHA" > header_temp.txt
           
-            cat header_temp.txt > content/plutotv_us.m3u
-            cat "sync-m3u/plutotv_us.m3u" >> content/plutotv_us.m3u
+            cat header_temp.txt > plutotv_us.m3u
+            cat "sync-m3u/plutotv_us.m3u" >> plutotv_us.m3u
             
             rm header_temp.txt
           else
@@ -85,15 +81,15 @@ jobs:
           fi
 
       # ==========================================
-      # COMMIT Y PUSH DE LA CARPETA CONTENT
+      # COMMIT Y PUSH EN LA RAÍZ
       # ==========================================
       - name: Commit y Push
         run: |
           git config --global user.name 'GitHub Action Bot'
           git config --global user.email 'action@github.com'
           
-          # Agregamos los cambios de la carpeta content
-          git add content/
+          # Agregamos los tres archivos creados en la raíz
+          git add plutotv_all.m3u plutotv_mx.m3u plutotv_us.m3u
           
           # Commit si cambió algo
-          git diff --cached --quiet || (git commit -m "Update: Pluto TV lists en content con fecha" && git push)
+          git diff --cached --quiet || (git commit -m "Update: Pluto TV lists en la raíz con fecha" && git push)
