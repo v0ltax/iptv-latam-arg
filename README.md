@@ -17,17 +17,17 @@ Este repositorio recopila y comparte algunas listas de reproducción m3u de IPTV
 
 Tambien podés copiar y pegar las siguientes URLs **directamente en tu reproductor**, todos tienen EPG integrados:
 
-- PlutoTV-AR: 
+- PlutoTV-MX: 
 ```bash
-https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-AR.m3u8
+https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/plutotv_mx_.m3u
 ```
 - PlutoTV-US:
 ```bash
-https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-US.m3u8
+https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/plutotv_us.m3u
 ```
 - PlutoTV-World:
 ```bash
-https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-World.m3u
+https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/plutotv_all.m3u
 ```
 
 ---
@@ -42,6 +42,7 @@ https://raw.githubusercontent.com/v0ltax/iptv-latam-arg/refs/heads/main/PlutoTV-
 
 ## 🙌 Basado en los siguientes proyectos
 
+- [https://github.com/BuddyChewChew/app-m3u-generator](https://github.com/BuddyChewChew/app-m3u-generator)
 - [https://github.com/abusaeeidx/IPTV-Scraper-Zilla](https://github.com/abusaeeidx/IPTV-Scraper-Zilla)
 - [https://github.com/evoactivity/PlutoIPTV](https://github.com/evoactivity/PlutoIPTV)
 - [https://github.com/matthuisman/i.mjh.nz](https://github.com/matthuisman/i.mjh.nz)
