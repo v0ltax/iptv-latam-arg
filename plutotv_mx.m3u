@@ -3,7 +3,7 @@
 # 🎯 This repository does NOT host any content.
 # 🔗 M3U: https://github.com/BuddyChewChew/app-m3u-generator
 # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
-# 🕒 Last Updated: 2026-08-11 13:07:03
+# 🕒 Last Updated: 2026-08-11 19:03:12
 #==================================
 #EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/mx.xml.gz"
 #EXTINF:-1 channel-id="646ccd3681844c000974d6f4" tvg-id="646ccd3681844c000974d6f4" tvg-chno="703" tvg-name="ADN Noticias" tvg-logo="https://images.pluto.tv/channels/646ccd3681844c000974d6f4/colorLogoPNG_1785346155200.png" group-title="Noticias",ADN Noticias
@@ -30,6 +30,8 @@ https://jmp2.uk/plu-646ccc7a2858cb0008127367.m3u8
 https://jmp2.uk/plu-619d5e6a093e7c0007489211.m3u8
 #EXTINF:-1 channel-id="5ebac49ce4dc8b00078b23bc" tvg-id="5ebac49ce4dc8b00078b23bc" tvg-chno="1415" tvg-name="Babyfirst" tvg-logo="https://images.pluto.tv/channels/5ebac49ce4dc8b00078b23bc/colorLogoPNG.png" group-title="Kids",Babyfirst
 https://jmp2.uk/plu-5ebac49ce4dc8b00078b23bc.m3u8
+#EXTINF:-1 channel-id="6a15f7770ed14e790bab6449" tvg-id="6a15f7770ed14e790bab6449" tvg-chno="126" tvg-name="Blue Bloods" tvg-logo="https://images.pluto.tv/channels/6a15f7770ed14e790bab6449/colorLogoPNG_1782506664518.png" group-title="Series",Blue Bloods
+https://jmp2.uk/plu-6a15f7770ed14e790bab6449.m3u8
 #EXTINF:-1 channel-id="6254598f5083f800076d8563" tvg-id="6254598f5083f800076d8563" tvg-chno="1460" tvg-name="Bob Esponja Pantalones Cuadrados" tvg-logo="https://images.pluto.tv/channels/6254598f5083f800076d8563/colorLogoPNG_1781042617821.png" group-title="Kids",Bob Esponja Pantalones Cuadrados
 https://jmp2.uk/plu-6254598f5083f800076d8563.m3u8
 #EXTINF:-1 channel-id="656f37f257fe4a000884dfee" tvg-id="656f37f257fe4a000884dfee" tvg-chno="1261" tvg-name="Boruto: Naruto Next Generations" tvg-logo="https://images.pluto.tv/channels/656f37f257fe4a000884dfee/colorLogoPNG.png" group-title="Anime & Gaming",Boruto: Naruto Next Generations
