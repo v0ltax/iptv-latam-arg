@@ -3,7 +3,7 @@
 # 🎯 This repository does NOT host any content.
 # 🔗 M3U: https://github.com/BuddyChewChew/app-m3u-generator
 # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
-# 🕒 Last Updated: 2026-08-20 06:47:26
+# 🕒 Last Updated: 2026-08-20 12:51:24
 #==================================
 #EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/us.xml.gz"
 #EXTINF:-1 channel-id="62ba60f059624e000781c436" tvg-id="62ba60f059624e000781c436" tvg-chno="160" tvg-name="00s Replay" tvg-logo="https://images.pluto.tv/channels/62ba60f059624e000781c436/colorLogoPNG.png" group-title="Movies",00s Replay
