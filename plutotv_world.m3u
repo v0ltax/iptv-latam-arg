@@ -3,7 +3,7 @@
 # 🎯 This repository does NOT host any content.
 # 🔗 M3U: https://github.com/BuddyChewChew/app-m3u-generator
 # 🔗 EPG: https://github.com/matthuisman/i.mjh.nz
-# 🕒 Last Updated: 2026-09-17 16:26:28
+# 🕒 Last Updated: 2026-09-17 21:01:50
 #==================================
 #EXTM3U url-tvg="https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/all.xml.gz"
 #EXTINF:-1 channel-id="62ba60f059624e000781c436-us" tvg-id="62ba60f059624e000781c436" tvg-chno="160" tvg-name="00s Replay" tvg-logo="https://images.pluto.tv/channels/62ba60f059624e000781c436/colorLogoPNG.png" group-title="United States",00s Replay
@@ -166,7 +166,7 @@ https://jmp2.uk/plu-68bb162bb3900870ec364cbe.m3u8
 https://jmp2.uk/plu-5ebc8688f3697d00072f7cf8.m3u8
 #EXTINF:-1 channel-id="68bb167e00a2f063fdf7ee8f-us" tvg-id="68bb167e00a2f063fdf7ee8f" tvg-chno="3450" tvg-name="Best of Bobby Flay by Food Network" tvg-logo="https://images.pluto.tv/channels/68bb167e00a2f063fdf7ee8f/colorLogoPNG_1757722144825.png" group-title="United States",Best of Bobby Flay by Food Network
 https://jmp2.uk/plu-68bb167e00a2f063fdf7ee8f.m3u8
-#EXTINF:-1 channel-id="60f760bbdf090700075d7bfe-us" tvg-id="60f760bbdf090700075d7bfe" tvg-chno="2430" tvg-name="Best of Dr. Phil" tvg-logo="https://images.pluto.tv/channels/60f760bbdf090700075d7bfe/colorLogoPNG.png" group-title="United States",Best of Dr. Phil
+#EXTINF:-1 channel-id="60f760bbdf090700075d7bfe-us" tvg-id="60f760bbdf090700075d7bfe" tvg-chno="2430" tvg-name="Best of Dr. Phil" tvg-logo="https://images.pluto.tv/channels/60f760bbdf090700075d7bfe/colorLogoPNG_1789593965816.png" group-title="United States",Best of Dr. Phil
 https://jmp2.uk/plu-60f760bbdf090700075d7bfe.m3u8
 #EXTINF:-1 channel-id="65a7b01907e03a0008913e8f-gb" tvg-id="65a7b01907e03a0008913e8f" tvg-chno="605" tvg-name="Best of Dr. Phil" tvg-logo="https://images.pluto.tv/channels/65a7b01907e03a0008913e8f/colorLogoPNG.png" group-title="United Kingdom",Best of Dr. Phil
 https://jmp2.uk/plu-65a7b01907e03a0008913e8f.m3u8
